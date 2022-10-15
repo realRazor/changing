@@ -11,6 +11,6 @@ contract Token {
         money[_from] -= _amount;
         money[_to] += _amount;
     }
-
+ 
 
 }
