@@ -6,43 +6,53 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "preOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newUser",
+						"type": "address"
+					}
+				],
+				"name": "addUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "money",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "sentToken",
+				"inputs": [],
+				"name": "renounceOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -51,16 +61,11 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_adress",
+						"name": "newOwner",
 						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
 					}
 				],
-				"name": "setToken",
+				"name": "transferOwnerShip",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -79,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/token.sol": "Token"
+			"contracts/artifacts/Inherit.sol": "UserMapping"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -93,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/token.sol": {
-			"keccak256": "0x76f9557ab5a74bc32e56b579e82fa02a4c5becccf4691affc8e0c84c29974471",
-			"license": "MIT",
+		"contracts/artifacts/Inherit.sol": {
+			"keccak256": "0x88899dde181e178c88ffbaf02b2b0830901559b0180f97616cc3ecdb4d949ef9",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://323ab2e46dd17743e71e2997e5b9dab29dead277578645b8d52d26197350e24c",
-				"dweb:/ipfs/QmWmUUvTZdt2aSirqtKbjNT9JW4LaFXBJPA2EJY4xsJNoF"
+				"bzz-raw://933bfc7ffa22dd529cfefdfd30ee81ef0921a02c576009158d1bf76b34ef8984",
+				"dweb:/ipfs/QmUQvjfNN98ryye2F5Nbk2DQpipEDh4oCCCb6WPAWwBqnF"
 			]
 		}
 	},
